@@ -30,7 +30,7 @@ echo "	ServerName $site" >> $virtualConf
 echo "	<Directory \"$docroot\">" >> $virtualConf
 echo "		AllowOverride All" >> $virtualConf
 echo "		Allow from All" >> $virtualConf
-echo "		Require All granted" >> $virtualConf
+echo "		Require all granted" >> $virtualConf
 echo "	</Directory>" >> $virtualConf
 echo "  CustomLog /var/log/apache2/$site_access.log" $site >> $virtualConf
 echo "	ErrorLog /var/log/apache2/$site_error.log" >> $virtualConf
